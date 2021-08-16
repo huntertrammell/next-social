@@ -1,0 +1,46 @@
+
+.meta {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.meta .likes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.meta .likes .action {
+    padding: 1rem;
+}
+.meta .likes .action button {
+    padding-left: 0;
+    background-color: unset;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meta .likes .action .heart {
+    fill:rgba(54, 117, 153, 0.3);
+    width: 20px;
+}
+.meta .likes .action .heart.liked {
+    fill:rgba(54, 117, 153, 1);
+    width: 20px;
+}
+.meta .likes .count {
+    font-size: 12px;
+    color: rgba(54, 117, 153, 1);
+}
+.meta .user {
+    margin-left: auto;
+}
+.meta .user div {
+    font-size: 12px;
+    color: rgba(54, 117, 153, 1);
+    font-style: italic;
+    padding: 1rem;
+}

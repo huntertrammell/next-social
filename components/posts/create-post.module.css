@@ -1,0 +1,64 @@
+.post {
+ width: 100%;
+ padding-top: 2rem;
+ 
+}
+
+.post .controls {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.post .control {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+}
+.post .control label {
+    /* Hide from users, screen readers only */
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+.post .control textarea {
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgba(54, 117, 153, 0.1);
+    resize: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(247, 247, 247, 1);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.post .action {
+    width: 100%;
+    height: 12rem;
+}
+.post .action button {
+    transition: color .2s ease, background-color .2s ease;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(54, 117, 153, 0.1);
+    border: 2px solid rgba(54, 117, 153, 0.6);
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: rgba(54, 117, 153, 1);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.post .action button:hover {
+    background-color: rgba(54, 117, 153, .6);
+    color: rgba(247, 247, 247, 1);
+    cursor: pointer;
+}

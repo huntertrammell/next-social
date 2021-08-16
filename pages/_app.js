@@ -1,7 +1,20 @@
+import Head from 'next/head'
+
+import Layout from '../components/layout/layout'
+
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return (
+		<Layout>
+			<Head>
+				<title>NextJS Social App</title>
+				<meta name="description" content="Built with Next.js & MongoDB" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<Component {...pageProps} />
+		</Layout>
+	)
 }
 
 export default MyApp

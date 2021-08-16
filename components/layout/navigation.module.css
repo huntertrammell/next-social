@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    padding: 1rem 4rem;
+    background-color: rgba(54, 117, 153, 0.1);
+    align-items: center;
+}
+
+.navbar h1 {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.navbar h1:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, .6);
+}
+
+.navbar nav {
+ margin-left: auto;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar nav li:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+@media(max-width: 900px){
+    .navbar {
+        padding: 1rem 1rem;
+    }
+}

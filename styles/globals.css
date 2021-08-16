@@ -11,6 +11,20 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%
+}
+
+.page {
+  width: 100%;
 }

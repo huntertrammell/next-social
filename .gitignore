@@ -82,6 +82,9 @@ typings/
 .nuxt
 dist
 
+#Next.js Config File (Manually setting API Keys in Production)
+next.config.js
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
