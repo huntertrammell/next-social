@@ -8,7 +8,11 @@ async function handler(req, res) {
 
 	const db = client.db()
 
-	const result = await db.collection('posts').find({}).toArray()
+	const result = await db
+		.collection('posts')
+		.find({})
+		.sort({ _id: -1 })
+		.toArray()
 	res.status(200).json(result)
 	client.close()
 }

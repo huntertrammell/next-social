@@ -1,6 +1,7 @@
 import Login from '../components/auth/login'
 import Register from '../components/auth/register'
-function Auth() {
+function Auth(props) {
+	console.log(props)
 	return (
 		<section>
 			<div className="flex-container">

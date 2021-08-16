@@ -3,7 +3,7 @@ import PostMeta from './post-meta'
 import css from './post.module.css'
 
 function Post(props) {
-	const { content, meta } = props.post
+	const { content, meta, _id } = props.post
 
 	return (
 		<article className={css.post}>
@@ -11,7 +11,7 @@ function Post(props) {
 				<p>{content}</p>
 			</div>
 			<div>
-				<PostMeta meta={meta} />
+				<PostMeta meta={meta} _id={_id} />
 			</div>
 		</article>
 	)

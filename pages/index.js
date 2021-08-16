@@ -17,7 +17,7 @@ function Home(props) {
 	)
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const response = await fetch(`${process.env.baseurl}/api/post`)
 	const data = await response.json()
 	return {
