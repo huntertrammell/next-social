@@ -2,6 +2,8 @@
 
 > Create a Facebook-like scalable "Like" system with the following in mind: You have two entities: posts and users
 
+Deployed Project -> [https://next-social.vercel.app/](https://next-social.vercel.app/)
+
 ## Assumptions
 
 1. A user can like many posts, and every post can be liked by many users
@@ -47,18 +49,19 @@ Run the following commands to setup, given `node` and `npm` is available:
 2. cd next-social
 3. npm install
 4. create ```next.config.js``` file with the following key values:
-    ```
-    module.exports = {
-        env: {
-            mongo_user: <username>,
-            mongo_pass: <pass>,
-            mongo_cluster: <cluster>,
-            mongo_database: <database>,
-            baseurl: 'http://localhost:3000',
-            NEXTAUTH_URL: 'http://localhost:3000',
-        },
-    }
 ```
+module.exports = {
+    env: {
+        mongo_user: <username>,
+        mongo_pass: <pass>,
+        mongo_cluster: <cluster>,
+        mongo_database: <database>,
+        baseurl: 'http://localhost:3000',
+        NEXTAUTH_URL: 'http://localhost:3000',
+    },
+}
+```
+
 5. npm run dev
 
 
@@ -73,4 +76,5 @@ This is a coding challenge and scope is quite small. If it was a bigger real pro
 - Improve security on text inputs
 - Use sitewide state for user authentication
 - Implement pwr library for data sync
+- Add testing to run at build time
 
