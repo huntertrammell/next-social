@@ -51,7 +51,7 @@ function Register() {
 	return (
 		<form onSubmit={handleSubmit} className={css.form}>
 			<div className={css.controls}>
-				{error && <p>{error}</p>}
+				{error && <p className="error">{error}</p>}
 				<div className={css.control}>
 					<label htmlFor="username" className="sr-only">
 						Username

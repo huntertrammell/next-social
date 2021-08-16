@@ -60,3 +60,9 @@ section {
     flex: 0 0 100%;
   }
 }
+
+.error {
+  text-align: center;
+  color: rgba(153, 54, 54, .8);
+  font-style: italic;
+}
