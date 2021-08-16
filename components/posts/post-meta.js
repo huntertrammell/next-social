@@ -1,17 +1,24 @@
 import { useEffect, useState } from 'react'
+import { useSession } from 'next-auth/client'
+import { useRouter } from 'next/router'
 import css from './post-meta.module.css'
 
 function PostMeta(props) {
-	const currentUser = 'Hunter Trammell'
+	const [session] = useSession()
+
+	const router = useRouter()
 	const { username } = props.meta
 	const { totalLikes, likedBy } = props.meta.likes
 	const [likedByUser, setLikedByUser] = useState(false)
 
 	useEffect(() => {
-		setLikedByUser(false)
-		const liked = likedBy.includes(currentUser)
-		if (liked) {
-			setLikedByUser(true)
+		if (session) {
+			const currentUser = session.user.name
+			setLikedByUser(false)
+			const liked = likedBy.includes(currentUser)
+			if (liked) {
+				setLikedByUser(true)
+			}
 		}
 	}, [likedBy])
 
@@ -30,6 +37,10 @@ function PostMeta(props) {
 	}
 
 	function likeHandler() {
+		if (!session) {
+			router.push('/auth')
+			return
+		}
 		if (!likedByUser) {
 			likedBy.push(currentUser)
 		} else {

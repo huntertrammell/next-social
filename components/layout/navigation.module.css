@@ -9,10 +9,11 @@
     line-height: 1;
     margin: 0;
     padding: 0;
+    color: rgba(54, 117, 153, 1);
 }
 .navbar h1:hover {
     cursor: pointer;
-    color: rgba(0, 0, 0, .6);
+    color: rgba(54, 117, 153, .6);
 }
 
 .navbar nav {
@@ -27,9 +28,11 @@
     justify-content: flex-end;
     align-items: center;
 }
-
+.navbar nav li {
+    color: rgba(54, 117, 153, 1);
+}
 .navbar nav li:hover {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(54, 117, 153, .6);
 }
 
 @media(max-width: 900px){

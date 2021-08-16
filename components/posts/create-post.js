@@ -6,7 +6,9 @@ function CreatePost() {
 			<form className={css.post}>
 				<div className={css.controls}>
 					<div className={css.control}>
-						<label htmlFor="post">New Post</label>
+						<label htmlFor="post" className="sr-only">
+							New Post
+						</label>
 						<textarea
 							rows="5"
 							id="post"
